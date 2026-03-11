@@ -1,1 +1,11 @@
+Body{
+  
+}
 
+nav{
+  display:flex;
+}
+
+nav div{
+  margin:10px;
+}
