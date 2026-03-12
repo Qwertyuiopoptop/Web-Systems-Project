@@ -1,11 +1,28 @@
-Body{
-  
+body{
+  margin: 0;
+  background-color: #483C46;
 }
 
 nav{
   display:flex;
+  width: 100vw;
+  background-color: #483C46;
+  border-radius: 10px;
+	border: 10px;
+	box-shadow: 0px 2px 20px #285943;
 }
 
-nav div{
-  margin:10px;
+nav div,a{
+  padding:10px;
+  color: #368F71;
+  width: 10%;
+  text-align: center;
+}
+
+nav div:hover{
+  background-color: #616384;
+}
+
+h1{
+  text-align: center;
 }
