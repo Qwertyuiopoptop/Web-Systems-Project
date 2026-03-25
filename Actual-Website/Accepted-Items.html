@@ -2,7 +2,37 @@
   <head>
     <title>Accepted Items</title>
     <link rel = "stylesheet" href = "stylesheet.css">
-    
+    <style>
+      #page{
+        display:grid;
+        grid-template-areas:"title title"
+                            "left right"
+                            "left right"
+                            "Take Take";
+        width:100%;
+        margin:5px;
+      }
+      #title
+      {
+        grid-area:title;
+      }
+      #left
+      {
+        grid-area:left;
+        margin:10px;
+      
+      }
+      #right
+      {
+        grid-area:right;
+        margin:10px;
+      }
+      #take
+      {
+        grid-area:Take;
+        
+      }
+    </style>
   </head>
   <body>
     <!--Camille-->
@@ -19,6 +49,42 @@
       <div><a href = "Tools.html">Tools She Uses</a></div>
       <div><a href = "Types-Wire.html">Types of Wire</a></div>
     </nav>
+    <div id = "page">
+        <h1 id = "title">Accepted Items</h1>
+      <div id = "left">
+        <h3>List of Accepted Items</h3>
+        <ul>
+          <li>VCRs</li>
+          <li>Tools</li>
+          <li>Cords</li>
+          <li>Lamps</li>
+          <li>Laptops</li>
+          <li>Printers</li>
+          <li>Speakers</li>
+          <li>Monitors</li>
+          <li>Computers</li>
+          <li>Pots & Pans</li>
+          <li>DVD Players</li>
+          <li>Flat Screen TVs</li>
+          <li>Gaming Consoles</li>
+          <li>Phones of all kinds</li>
+          <li>Kitchen Appliances</li>
+          <li>Lights (including strung)</li>
+          <li>Pretty much anything that plugs in</li>
+        </ul>
+      </div>
+      <div id = "right">
+        <h3>Non-Accepted Items</h3>
+        <p>I do NOT take any tube TVs or any items containing Freon.</p>
+        <p>Find more information on Freon</p>
+        <button><a href = "Freon-Info.html">Click Here</a></button>
+      </div>
+      <div id = "take">
+         <h3>Where to take Accepted Items</h3>
+      </div>
+    </div>
+
+    
     
   </body>
 </html>
