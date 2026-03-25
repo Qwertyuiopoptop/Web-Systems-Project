@@ -34,3 +34,37 @@ h1{
 {
   color:#B7E1D0;
 }
+
+#home-container{
+  display: grid;
+  width: 100vw;
+  height: 100vw;
+  text-align: center;
+  grid-template-areas: 
+  "s1 a a a b b b s2"
+  "s1 a a a b b b s2"
+  "s1 c c d d e e s2"
+  "s1 c c d d e e s2"
+  "s1 f f g g h h s2"
+  "s1 f f g g h h s2"
+  "s1 i i i j j j s2"
+  "s1 i i i j j j s2";
+}
+
+
+#sec1,#sec2,#sec3,#sec4,#sec5,#sec6,#sec7,#sec8,#sec9,#sec10{
+  border-radius: 10px;
+  border: 10px;
+  box-shadow: 0px 2px 20px #43c59e;
+}
+
+#sec1{ grid-area: a; }
+#sec2{ grid-area: b; }
+#sec3{ grid-area: c; }
+#sec4{ grid-area: d; }
+#sec5{ grid-area: e; }
+#sec6{ grid-area: f; }
+#sec7{ grid-area: g; }
+#sec8{ grid-area: h; }
+#sec9{ grid-area: i; }
+#sec10{ grid-area: j; }
