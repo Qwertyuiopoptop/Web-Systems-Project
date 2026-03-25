@@ -28,5 +28,9 @@ h1{
 .curPage
 {
   background-color:#616384;
-  color:#285943;
+}
+
+.curPage a
+{
+  color:#B7E1D0;
 }
