@@ -24,3 +24,9 @@ h1{
   text-align: center;
   margin-bottom: 0;
 }
+
+.curPage
+{
+  background-color:#616384;
+  color:#285943;
+}
