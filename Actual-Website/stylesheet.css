@@ -55,7 +55,7 @@ h1{
 #sec1,#sec2,#sec3,#sec4,#sec5,#sec6,#sec7,#sec8,#sec9,#sec10{
   border-radius: 10px;
   border: 10px;
-  box-shadow: 0px 2px 20px #43c59e;
+  box-shadow: 0px 2px 20px #285943;
 }
 
 #sec1{ grid-area: a; }
@@ -68,3 +68,18 @@ h1{
 #sec8{ grid-area: h; }
 #sec9{ grid-area: i; }
 #sec10{ grid-area: j; }
+
+#sec1:hover,#sec2:hover,#sec3:hover,#sec4:hover,#sec5:hover,#sec6:hover,#sec7:hover,#sec8:hover,#sec9:hover,#sec10:hover{
+  background-color: #285943;
+  box-shadow: 0px 2px 20px #43C59E;
+}
+
+#sec1>iframe,#sec2>iframe,#sec9>iframe,#sec10>iframe{
+  width: 95%;
+  height: 85%;
+}
+
+#sec3>iframe,#sec4>iframe,#sec5>iframe,#sec6>iframe,#sec7>iframe,#sec8>iframe{
+  width: 95%;
+  height: 85%;
+}
