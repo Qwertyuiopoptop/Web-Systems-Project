@@ -23,6 +23,8 @@ nav div a
     border:1px solid transparent;
     color: #368F71;
     text-decoration-style: none;
+    text-decoration:none;
+    font-size:medium;
   }
 
 
