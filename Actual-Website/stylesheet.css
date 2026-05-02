@@ -1,8 +1,8 @@
 :root{
-  --col1: #483C46; /*Muave Shadow*/
-  --col2: #616384; /*Dusty Grape*/
+  --col1: #483C46; /*Muave Shadow*/ /*Main BG Color*/
+  --col2: #616384; /*Dusty Grape*/ 
   --col3: #7A89C2; /*Glaucous*/
-  --col4: #5FA7B0; /*Pacific Blue*/
+  --col4: #5FA7B0; /*Pacific Blue*/ /*Main Text Color*/
   --col5: #43C59E; /*Mint Leaf*/
   --col6: #368F71; /*Jungle Teal*/
   --col7: #285943; /*Emerald Depths*/
@@ -36,7 +36,6 @@ nav div a
     font-size:medium;
     font-weight:bold;
   }
-
 
 
 nav div:hover{
@@ -135,4 +134,51 @@ h1{
   padding-left: 1%;
   padding-right: 10%;
   float: left;
+}
+
+.HSR-Sections{
+  width: 100%;
+  height: 40%;
+  padding-bottom: 5%;
+}
+
+.HSR-Sections>.left-txt{
+  color: var(--col4);
+  height: 65%;
+  width: 50%;
+  float: left;
+  padding-left: 19%;
+  padding-right: 1%;
+}
+
+.HSR-Sections>.right-img{
+  padding-right: 10%;
+  width: 20%;
+  float: left;
+}
+
+.HSR-Sections>.left-img{
+  padding-left: 20%;
+  width: 20%;
+  float: left;
+}
+
+.HSR-Sections>.right-txt{
+  color: var(--col4);
+  height: 65%;
+  width: 50%;
+  float: left;
+  padding-right: 9%;
+  padding-left: 1%;
+}
+
+.left-txt>a>button{
+  background-color: var(--col7);
+  color: var(--col8);
+  width: 50%;
+  height: 50px;
+}
+
+.left-txt>a{
+  padding-left: 25%;
 }
