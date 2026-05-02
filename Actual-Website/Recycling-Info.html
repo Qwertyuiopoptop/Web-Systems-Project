@@ -2,12 +2,50 @@
   <head>
     <title>Recycling Info</title>
     <link rel = "stylesheet" href = "stylesheet.css">
+    <style>
+      h1, div
+      {
+        color:#5FA7B0;
+      }
+      .box
+      {
+        border-radius:8px;
+        overflow:hidden;
+        text-align:center;
+      }
+
+
+      .question {
+            padding: 16px;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+
+        .answer {
+            padding: 16px;
+            display: none;
+            font-size: large;
+            line-height: 1.6;
+            background-color:#5FA7B0;
+            color:#483C46;
+        }
+
+        .item.active .answer {
+            display: block;
+        }
+        .header
+        {
+          color:black;
+        }
+
+    </style>
     
   </head>
   <body>
     <!--Camille-->
-    <h1>Sue Lemke</h1>
-		<p style="text-align: center;">Recycler by Day, Home cook by night</p>
+    <h1 class = "header">Sue Lemke</h1>
+		<p class = "header" style="text-align: center;">Recycler by Day, Home cook by night</p>
     <nav>
       <div><a href = "home.html">Home Page</a></div>
       <div><a href = "Accepted-Items.html">Accepted Items</a></div>
@@ -21,5 +59,53 @@
       <div><a href = "Tools.html">Tools She Uses</a></div>
       <div><a href = "Types-Wire.html">Types of Wire</a></div>
     </nav>
+
+    <h1>Recycling Information</h1>
+    <hr>
+    <div class = "box">
+      <div class = "item">
+        <div class = "question">Why Recycle?</div>
+        <div class = "answer">
+            <p>Recycling is easy to do, and has a big enviromental impact. According to the EPA, recycling one ton of office papers saves the same amount of energy as would be used by consuming 322 gallons of gasoline, and recycling just ten plastic bottles saves enough energy to power a laptop for over 25 hours.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class = "box">
+      <div class = "item">
+        <div class = "question">What can be Recycled?</div>
+        <div class = "answer">
+            <p>Answer</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class = "box">
+      <div class = "item">
+        <div class = "question">Why Did Sue Start Her Recycling Business?</div>
+        <div class = "answer">
+            <p>Answer</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class = "box">
+      <div class = "item">
+        <div class = "question">Wher Can I Find More Information On Recycling?</div>
+        <div class = "answer">
+            <p>Answer</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const items= document.querySelectorAll('.item');
+
+      items.forEach( item => {item.addEventListener('click', () => {item.classList.toggle('active');
+                 });
+                });
+    </script>
+
+
   </body>
 </html>
