@@ -72,15 +72,15 @@ h1{
   box-shadow: 0px 2px 20px #B7E1D0;
 }
 
-#sec1{ grid-area: a; }
-#sec2{ grid-area: b; }
-#sec3{ grid-area: c; }
-#sec4{ grid-area: d; }
-#sec5{ grid-area: e; }
-#sec6{ grid-area: f; }
-#sec7{ grid-area: g; }
-#sec8{ grid-area: h; }
-#sec9{ grid-area: i; }
+#sec1 { grid-area: a; }
+#sec2 { grid-area: b; }
+#sec3 { grid-area: c; }
+#sec4 { grid-area: d; }
+#sec5 { grid-area: e; }
+#sec6 { grid-area: f; }
+#sec7 { grid-area: g; }
+#sec8 { grid-area: h; }
+#sec9 { grid-area: i; }
 #sec10{ grid-area: j; }
 
 #sec1:hover,#sec2:hover,#sec3:hover,#sec4:hover,#sec5:hover,#sec6:hover,#sec7:hover,#sec8:hover,#sec9:hover,#sec10:hover{
@@ -96,4 +96,18 @@ h1{
 #sec3>iframe,#sec4>iframe,#sec5>iframe,#sec6>iframe,#sec7>iframe,#sec8>iframe{
   width: 95%;
   height: 85%;
+}
+
+#Mission-Left{
+  height: 80%;
+  width: 40%;
+  float: left;
+  padding-left: 10%;
+}
+
+#Mission-Right{
+  height: 80%;
+  width: 40%;
+  float: left;
+  padding-right: 10%;
 }
