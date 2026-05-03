@@ -108,7 +108,7 @@ h1{
 
 #Mission-Left-1{ /*Text*/
   color: var(--col4);
-  height: 65%;
+  height: 75%;
   width: 54%;
   float: left;
   padding-left: 10%;
@@ -116,7 +116,7 @@ h1{
 }
 
 #Mission-Right-1{ /*Image*/
-  height: 65%;
+  height: 75%;
   width: 25%;
   float: left;
   padding-right: 10%;
@@ -138,38 +138,38 @@ h1{
 
 .HSR-Sections{
   width: 100%;
-  height: 40%;
+  height: 53%;
   padding-bottom: 5%;
 }
 
 .HSR-Sections>.left-txt{
   color: var(--col4);
-  height: 65%;
-  width: 50%;
+  height: 137%;
+  width: 49%;
   float: left;
-  padding-left: 19%;
+  padding-left: 10%;
   padding-right: 1%;
 }
 
 .HSR-Sections>.right-img{
   padding-right: 10%;
-  width: 20%;
+  width: 30%;
   float: left;
 }
 
 .HSR-Sections>.left-img{
-  padding-left: 20%;
-  width: 20%;
+  padding-left: 10%;
+  width: 30%;
   float: left;
+  padding-right: 1%;
 }
 
 .HSR-Sections>.right-txt{
   color: var(--col4);
-  height: 65%;
-  width: 50%;
+  height: 137%;
+  width: 49%;
   float: left;
-  padding-right: 9%;
-  padding-left: 1%;
+  padding-right: 10%;
 }
 
 .left-txt>a>button{
