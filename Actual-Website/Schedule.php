@@ -3,12 +3,20 @@
         <title>Schedule</title>
         <link rel = "stylesheet" href = "stylesheet.css">
         <style>
+            header h1, header p
+            {
+                color:black;
+            }
+            h1
+            {
+                color:#5FA7B0;;
+            }
         
         </style>
     </head>
     <body>
         <header>
-        <h1>Sue Lemke</h1>
+            <h1>Sue Lemke</h1>
 		    <p style="text-align: center;">Recycler by Day, Home cook by night</p>
         </header>
         <nav>
@@ -25,9 +33,20 @@
         <div><a href = "Types-Wire.html">Types of Wire</a></div>
         <div class = "curPage"><a href = "Schedule.php">Scheduling</a></div>
         </nav>
+
         <h1>Scheduling</h1>
         <?php
         
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        mysqli_report(MYSQLI_REPORT_OFF);
+        $conn = new mysqli($servername, $username, $password);
+        if ($conn->connect_error){
+            die("Connection failed: ".$conn->connect_error);
+        }
+
+        $conn->close(); 
         ?>
     </body>
 </html>
