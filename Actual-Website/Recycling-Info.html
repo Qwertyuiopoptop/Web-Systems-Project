@@ -3,10 +3,7 @@
     <title>Recycling Info</title>
     <link rel = "stylesheet" href = "stylesheet.css">
     <style>
-      h1, div
-      {
-        color:#5FA7B0;
-      }
+
       .box
       {
         border-radius:8px;
@@ -16,7 +13,7 @@
 
       .item
       {
-        border-bottom:2px solid #483C46;
+        border-bottom:1px solid #483C46;
       }
 
       .question {
@@ -31,8 +28,8 @@
             display: none;
             font-size: large;
             line-height: 1.6;
-            background-color:#5FA7B0;
-            color:#483C46;
+            background-color:var(--col1);
+            color:var(--col8);
         }
 
         .item.active .answer {
@@ -45,7 +42,7 @@
 
         a
         {
-          color:#483C46;
+          color:var(--col8);
         }
 
         .dropdown
@@ -59,8 +56,6 @@
   </head>
   <body>
     <!--Camille-->
-    <h1 class = "header">Sue Lemke</h1>
-    <p class = "header" style="text-align: center;">Preventing waste, one scrap at a time</p>
     <nav>
       <a href="home.html"><h3>Home Page</h3></a>
       <a href="Accepted-Items.html"><h3>Accepted Items</h3></a>
@@ -75,9 +70,9 @@
       <a href="Types-Wire.html"><h3>Types of Wire</h3></a>
       <a href="Schedule.php"><h3>Scheduling</h3></a>
     </nav>
-</h3>
+
     <h1>Recycling Information</h1>
-    <hr>
+    <br>
     <div class = "box">
       <div class = "item">
         <div class = "question">Why Recycle?<span class = "dropdown">🠟</span></div>
