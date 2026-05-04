@@ -1,5 +1,4 @@
 /*
-:root {
   --bg-main: #B7E1D0;    col8 – page background 
   --bg-section: #ffffff;
 
@@ -11,8 +10,7 @@
   --text-muted: #616384; col2 – secondary text
 
   --nav-bg: #483C46;     col1 – navbar 
-  --nav-hover: #7A89C2;  col3 – hover 
-}
+  --nav-hover: #7A89C2;  col3 – hover
 */
 
 :root{
