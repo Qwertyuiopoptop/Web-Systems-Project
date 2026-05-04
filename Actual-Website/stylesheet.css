@@ -1,0 +1,219 @@
+/*
+:root {
+  --bg-main: #B7E1D0;    col8 – page background 
+  --bg-section: #ffffff;
+
+  --primary: #368F71;    col6 – main accents/buttons 
+  --secondary: #5FA7B0;  col4 – section headers 
+  --highlight: #43C59E;  col5 – emphasis 
+
+  --text-main: #285943;  col7 – body text 
+  --text-muted: #616384; col2 – secondary text
+
+  --nav-bg: #483C46;     col1 – navbar 
+  --nav-hover: #7A89C2;  col3 – hover 
+}
+*/
+
+:root{
+  --col1: #483C46; /*Muave Shadow*/ /*Main BG Color*/
+  --col2: #616384; /*Dusty Grape*/ 
+  --col3: #7A89C2; /*Glaucous*/
+  --col4: #5FA7B0; /*Pacific Blue*/ /*Main Text Color*/
+  --col5: #43C59E; /*Mint Leaf*/
+  --col6: #368F71; /*Jungle Teal*/
+  --col7: #285943; /*Emerald Depths*/
+  --col8: #B7E1D0; /*Pearl Aqua*/
+}
+
+body{
+  margin: 0;
+  background-color: var(--col8);
+  color: var(--col7);
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+  background-color: var(--col3);
+}
+
+nav>a{
+  text-decoration: none;
+  background-color: var(--col1);
+  color: var(--col8);
+  width: 100%;
+  height: 100%;
+}
+
+.curPage{
+  background-color: var(--col2);
+}
+
+nav>a>h3{
+  text-align: center;
+}
+
+nav>a:hover{
+  background-color: var(--col3);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 0;
+  color: var(--col6);
+}
+
+h2{
+  color: var(--col4);
+}
+
+.page-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-content-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  height: 24%;
+}
+
+.home-content-links{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1%;
+}
+
+.home-content-card{
+  color: var(--col7);
+  background-color: var(--col8);
+  text-decoration: none;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  border-color: var(--col7);
+  border-width: 5px;
+  border-style: solid;
+  text-align: center;
+  box-shadow:0 4px 10px var(--col1);
+}
+
+.home-content-card:hover{
+  background-color: var(--col5);
+}
+
+#Mission-Left-1{ /*Text*/
+  height: 80%;
+  width: 54%;
+  float: left;
+  padding-left: 10%;
+  padding-right: 1%;
+}
+
+#Mission-Right-1{ /*Image*/
+  height: 80%;
+  width: 25%;
+  float: left;
+  padding-right: 10%;
+}
+
+#Mission-Left-2{ /*Image*/
+  width: 25%;
+  float: left;
+  padding-left: 10%;
+}
+
+#Mission-Right-2{ /*Text*/
+  width: 54%;
+  padding-left: 1%;
+  padding-right: 10%;
+  float: left;
+}
+
+.HSR-Sections{
+  width: 100%;
+  height: 53%;
+  padding-bottom: 5%;
+}
+
+.HSR-header{
+  float: left;
+  width: 100%;
+  color: var(--col3);
+  height: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.HSR-Sections>.left-txt{
+  height: 137%;
+  width: 49%;
+  float: left;
+  padding-left: 10%;
+  padding-right: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.HSR-Sections>.right-img{
+  padding-right: 10%;
+  width: 30%;
+  float: left;
+}
+
+.HSR-Sections>.left-img{
+  padding-left: 10%;
+  width: 30%;
+  float: left;
+  padding-right: 1%;
+}
+
+.HSR-Sections>.right-txt{
+  height: 137%;
+  width: 49%;
+  float: left;
+  padding-right: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.left-txt>a>button{
+  background-color: var(--col7);
+  color: var(--col8);
+  width: 50%;
+  height: 50px;
+}
+
+.CF-txt{
+  height: 40%;
+  width: 49%;
+  float: left;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 1%;
+  align-items: center;
+}
+
+.CF-img{
+  padding-right: 10%;
+  width: 30%;
+  float: left;
+}
