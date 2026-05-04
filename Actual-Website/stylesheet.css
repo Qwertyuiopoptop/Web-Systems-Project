@@ -55,6 +55,13 @@ h2{
   color: var(--col4);
 }
 
+.page-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 #home-content-header{
   display: flex;
   flex-direction: row;
