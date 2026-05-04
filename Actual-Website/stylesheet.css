@@ -13,35 +13,6 @@ body{
   margin: 0;
   background-color: var(--col1);
 }
-/*
-nav
-  {
-    white-space:nowrap;
-    overflow-x:auto;
-    display:flex;
-    padding: 10px;
-    background-color: var(--col1);
-    scrollbar-color:var(--col7) var(--col1);
-  }
-
-nav div a
-  {
-    margin-right:20px;
-    padding: 5px 5px;
-    transition: all 0.3s;
-    border:1px solid transparent;
-    color: var(--col6);
-    text-decoration-style: none;
-    text-decoration:none;
-    font-size:medium;
-    font-weight:bold;
-  }
-
-
-nav div:hover{
-  background-color: var(--col2);
-}
-*/
 
 nav{
   display: flex;
