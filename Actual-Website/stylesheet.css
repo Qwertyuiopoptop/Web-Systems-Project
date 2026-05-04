@@ -199,10 +199,10 @@ h2{
 }
 
 .left-txt>a>button{
-  background-color: var(--col1);
+  background-color: var(--col7);
   color: var(--col8);
   width: 50%;
-  height: 50px;
+  height: 50px; 
 }
 
 .CF-txt{
