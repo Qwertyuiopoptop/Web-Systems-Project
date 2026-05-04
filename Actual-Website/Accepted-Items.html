@@ -12,14 +12,9 @@
         width:100%;
         margin:5px;
       }
-      #title, #left, #right, #take
-      {
-        color:#5FA7B0;;
-      }
       #title
       {
         grid-area:title;
-        color:#5FA7B0;
       }
       #left
       {
@@ -37,7 +32,7 @@
         grid-area:Take;
        
       }
-      img{
+      #img{
         width:30%;
         float:right;
         margin:5px;
@@ -61,8 +56,7 @@
   </head>
   <body>
     <!--Camille-->
-    <h1>Sue Lemke</h1>
-    <p style="text-align: center;">Preventing waste, one scrap at a time</p>
+
     <nav>
       <a href="home.html"><h3>Home Page</h3></a>
       <a href="Accepted-Items.html" class="curPage"><h3>Accepted Items</h3></a>
@@ -76,6 +70,15 @@
       <a href="Types-Wire.html"><h3>Types of Wire</h3></a>
       <a href="Schedule.php"><h3>Scheduling</h3></a>
     </nav>
+    <div class="page-header">
+            <img src="photos/Recycle.png" alt="" height="100px" width="100px">
+            <div>
+                <h1>Sue Lemke</h1>
+                <p style="text-align: center;">Preventing waste, one scrap at a time</p>
+            </div>
+            <img src="photos/Recycle.png" alt="" height="100px" width="100px">
+        </div>
+      <hr>
     <div id = "page">
         <h1 id = "title">Accepted Items</h1>
       <div id = "left">
@@ -107,7 +110,7 @@
         <button><a href = "Freon-Info.html">More Information on Freon</a></button>
       </div>
       <div id = "take">
-         <img src = "photos/drop-off-spot.jpeg" alt = "An image of the drop off location">
+         <img id = "img" src = "photos/drop-off-spot.jpeg" alt = "An image of the drop off location">
          <h3>Where to take Accepted Items</h3>
          <p>Take your recyclable items to 39 South Locust Street, Oconomowoc WI, 53066</p>
          <h4>Drop Off Instructions</h4>
