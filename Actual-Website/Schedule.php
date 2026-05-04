@@ -17,7 +17,7 @@
     <body>
         <header>
             <h1>Sue Lemke</h1>
-		    <p style="text-align: center;">Recycler by Day, Home cook by night</p>
+		    <p style="text-align: center;">Preventing waste, one scrap at a time</p>
         </header>
 		<nav>
 			<a href="home.html"><h3>Home Page</h3></a>
