@@ -1,5 +1,4 @@
 /*
-:root {
   --bg-main: #B7E1D0;    col8 – page background 
   --bg-section: #ffffff;
 
@@ -11,8 +10,7 @@
   --text-muted: #616384; col2 – secondary text
 
   --nav-bg: #483C46;     col1 – navbar 
-  --nav-hover: #7A89C2;  col3 – hover 
-}
+  --nav-hover: #7A89C2;  col3 – hover
 */
 
 :root{
@@ -48,6 +46,10 @@ nav>a{
   color: var(--col8);
   width: 100%;
   height: 100%;
+}
+
+nav>a>h3{
+  font-size: 15px;
 }
 
 .curPage{
@@ -145,6 +147,7 @@ h2{
 }
 
 .HSR-Sections{
+  background-color: yellowgreen;
   width: 100%;
   height: 53%;
   padding-bottom: 5%;
@@ -157,11 +160,13 @@ h2{
   height: 3%;
   display: flex;
   justify-content: center;
+  background-color: pink;
 }
 
 .HSR-Sections>.left-txt{
-  height: 137%;
-  width: 49%;
+  background-color: red;
+  height: 90%;
+  width: 59%;
   float: left;
   padding-left: 10%;
   padding-right: 1%;
@@ -173,20 +178,23 @@ h2{
 
 .HSR-Sections>.right-img{
   padding-right: 10%;
-  width: 30%;
+  background-color: yellow;
+  width: 20%;
   float: left;
 }
 
 .HSR-Sections>.left-img{
+  background-color: green;
   padding-left: 10%;
-  width: 30%;
+  width: 20%;
   float: left;
   padding-right: 1%;
 }
 
 .HSR-Sections>.right-txt{
-  height: 137%;
-  width: 49%;
+  background-color: blue;
+  height: 90%;
+  width: 59%;
   float: left;
   padding-right: 10%;
   text-align: center;
