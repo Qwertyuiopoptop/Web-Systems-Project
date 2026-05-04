@@ -133,12 +133,25 @@ h2{
   padding-bottom: 5%;
 }
 
+.HSR-header{
+  float: left;
+  width: 100%;
+  color: var(--col3);
+  height: 3%;
+  display: flex;
+  justify-content: center;
+}
+
 .HSR-Sections>.left-txt{
   height: 137%;
   width: 49%;
   float: left;
   padding-left: 10%;
   padding-right: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .HSR-Sections>.right-img{
@@ -159,6 +172,10 @@ h2{
   width: 49%;
   float: left;
   padding-right: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .left-txt>a>button{
@@ -166,10 +183,6 @@ h2{
   color: var(--col8);
   width: 50%;
   height: 50px;
-}
-
-.left-txt>a{
-  padding-left: 25%;
 }
 
 .CF-txt{
