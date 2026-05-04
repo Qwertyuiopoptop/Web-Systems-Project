@@ -35,6 +35,10 @@
         </nav>
 
         <h1>Scheduling</h1>
+        <form>
+
+        </form>
+
         <?php
         
         $servername = "localhost";
@@ -45,6 +49,19 @@
         if ($conn->connect_error){
             die("Connection failed: ".$conn->connect_error);
         }
+
+
+        $sql = "CREATE database Schedule";
+
+        $sql = "USE Schedule;";
+
+        $sql = "CREATE TABLE Person (ID int auto_increment PRIMARY KEY, FName varChar(50), LName varchar(50), Adress varchar(200));";
+
+        $sql = "CREATE TABLE Appointment (ID int FOREIGN KEY, AppDay varchar(50), AppTime varchar(50))";
+
+
+
+
 
         $conn->close(); 
         ?>
