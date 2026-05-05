@@ -1,5 +1,3 @@
-<!--Fanye-->
-
 <html>
 	<head>
 		<link rel="stylesheet" href="stylesheet.css">
@@ -7,26 +5,89 @@
 
 		<style>
 			nav {
-				height: auto;
-				min-height: 55px;
+				height: 38px;
+				min-height: 38px;
+				overflow: hidden;
 				align-items: stretch;
 			}
 
 			nav a {
-				height: auto;
-				min-height: 55px;
+				width: auto;
+				flex: 1;
+				height: 100%;
 				display: flex;
-				justify-content: center;
 				align-items: center;
-				padding: 4px;
+				justify-content: center;
+				padding: 0 4px;
 				box-sizing: border-box;
 			}
 
 			nav a h3 {
 				margin: 0;
-				font-size: 15px;
-				line-height: 1.2;
+				font-size: 12px;
+				line-height: 1;
 				text-align: center;
+				white-space: nowrap;
+			}
+
+			.page-intro {
+				text-align: center;
+				color: var(--col7);
+			}
+
+			.section-header {
+				background-color: var(--col5);
+				color: var(--col1);
+				text-align: center;
+				padding: 8px;
+				margin-top: 30px;
+				margin-bottom: 25px;
+			}
+
+			.info-section {
+				width: 100%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 50px;
+				align-items: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				margin-bottom: 45px;
+				box-sizing: border-box;
+			}
+
+			.info-text {
+				text-align: center;
+				color: var(--col7);
+				line-height: 1.5;
+			}
+
+			.info-image img {
+				width: 100%;
+				max-height: 430px;
+				object-fit: cover;
+			}
+
+			.info-button {
+				display: block;
+				width: 60%;
+				max-width: 550px;
+				margin: 25px auto 0 auto;
+				padding: 18px 20px;
+				background-color: var(--col7);
+				color: var(--col8);
+				text-align: center;
+				text-decoration: none;
+				border: 3px solid var(--col1);
+				box-shadow: 0 4px 10px var(--col1);
+				transition: 0.3s;
+			}
+
+			.info-button:hover {
+				background-color: var(--col3);
+				color: var(--col1);
+				transform: translateY(-3px);
+				box-shadow: 0 8px 16px var(--col1);
 			}
 		</style>
 	</head>
@@ -48,62 +109,82 @@
 		</nav>
 
 		<div class="page-header">
-			<img src="photos/Recycle.png" alt="" height="100px" width="100px">
+			<img src="photos/Recycle.png" alt="Recycling Logo" height="100px" width="100px">
 			<div>
 				<h1>Sue Lemke</h1>
-				<p style="text-align: center;">Preventing waste, one scrap at a time</p>
+				<p class="page-intro">Preventing waste, one scrap at a time</p>
 			</div>
-			<img src="photos/Recycle.png" alt="" height="100px" width="100px">
+			<img src="photos/Recycle.png" alt="Recycling Logo" height="100px" width="100px">
 		</div>
 
 		<hr>
 
 		<h1>Tools I Use</h1>
 
-		<h3 style="text-align: center;">
+		<h3 class="page-intro">
 			These are some of the tools Sue uses to safely take apart old electronics.
 		</h3>
 
-		<div class="CF-txt">
-			<h3 style="text-align: center;">
-				Sue uses basic hand tools to open electronics and separate recyclable materials.
-				Some common tools include screwdrivers, wire cutters, pliers, safety gloves,
-				and socket wrenches. These tools help her remove screws, cut wires, and separate
-				metal, plastic, and other recyclable parts.
-			</h3>
+		<h2 class="section-header">Basic Hand Tools:</h2>
+
+		<div class="info-section">
+			<div class="info-text">
+				<h3>
+					Basic hand tools are important for opening old electronics and separating recyclable materials.
+					Pliers, cutters, and screwdrivers help remove small parts, wires, and screws safely.
+				</h3>
+			</div>
+
+			<div class="info-image">
+				<img src="photos/tools/common-tools.jpeg" alt="Common tools">
+			</div>
 		</div>
 
-		<div class="CF-img">
-			<img src="photos/tools/htm-toolkit.jpeg" alt="Tool kit" width="100%">
+		<h2 class="section-header">Screwdriver Kit:</h2>
+
+		<div class="info-section">
+			<div class="info-image">
+				<img src="photos/tools/htm-toolkit.jpeg" alt="Screwdriver kit">
+			</div>
+
+			<div class="info-text">
+				<h3>
+					A screwdriver kit is useful because electronics often use many different screw types.
+					Having different screwdriver heads makes it easier to open devices without damaging the case or parts inside.
+				</h3>
+			</div>
 		</div>
 
-		<div class="CF-txt">
-			<h3>
-				Safety is important when taking apart electronics. Gloves help protect hands from
-				sharp edges, broken plastic, and metal pieces. Wire cutters and pliers are useful
-				for removing cords and smaller parts without damaging the recyclable material too much.
-			</h3>
-		</div>
+		<h2 class="section-header">Magnets and Special Screws:</h2>
 
-		<div class="CF-img">
-			<img src="photos/wire-types/aluminium-copper-wiring.jpeg" alt="Copper and aluminum wiring" width="100%">
-		</div>
+		<div class="info-section">
+			<div class="info-text">
+				<h3>
+					A magnet can help identify whether a piece of metal is steel or another type of metal.
+					Star screwdrivers are also useful because many electronics use screws that normal screwdrivers cannot remove.
+				</h3>
 
-		<div class="CF-txt">
-			<h3>
-
-				Using the right tools makes recycling easier and more organized. After the items are
-				taken apart, Sue can sort the materials into different groups, such as copper wire,
-				aluminum, steel, and circuit boards.
-				<br><br>
-				<a href="https://www.osha.gov/hand-power-tools" target="_blank">
+				<a class="info-button" href="https://www.osha.gov/hand-power-tools" target="_blank">
 					Learn more about hand tool safety
 				</a>
-			</h3>
+			</div>
+
+			<div class="info-image">
+				<img src="photos/tools/magnet.jpeg" alt="Magnet">
+			</div>
 		</div>
 
-		<div class="CF-img">
-			<img src="photos/copper.jpeg" alt="Copper pieces" width="100%">
+		<div class="info-section">
+			<div class="info-image">
+				<img src="photos/tools/star-screwdrivers.jpeg" alt="Star screwdrivers">
+			</div>
+
+			<div class="info-text">
+				<h3>
+					These tools make the recycling process easier and more organized.
+					After electronics are opened, the materials can be sorted into groups like copper wire, aluminum, steel, plastic, and circuit boards.
+				</h3>
+			</div>
 		</div>
 	</body>
 </html>
