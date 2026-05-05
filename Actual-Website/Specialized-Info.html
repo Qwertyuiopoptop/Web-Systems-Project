@@ -1,5 +1,3 @@
-<!--Fanye-->
-
 <html>
 	<head>
 		<link rel="stylesheet" href="stylesheet.css">
@@ -7,26 +5,89 @@
 
 		<style>
 			nav {
-				height: auto;
-				min-height: 55px;
+				height: 38px;
+				min-height: 38px;
+				overflow: hidden;
 				align-items: stretch;
 			}
 
 			nav a {
-				height: auto;
-				min-height: 55px;
+				width: auto;
+				flex: 1;
+				height: 100%;
 				display: flex;
-				justify-content: center;
 				align-items: center;
-				padding: 4px;
+				justify-content: center;
+				padding: 0 4px;
 				box-sizing: border-box;
 			}
 
 			nav a h3 {
 				margin: 0;
-				font-size: 15px;
-				line-height: 1.2;
+				font-size: 12px;
+				line-height: 1;
 				text-align: center;
+				white-space: nowrap;
+			}
+
+			.page-intro {
+				text-align: center;
+				color: var(--col7);
+			}
+
+			.section-header {
+				background-color: var(--col5);
+				color: var(--col1);
+				text-align: center;
+				padding: 8px;
+				margin-top: 30px;
+				margin-bottom: 25px;
+			}
+
+			.info-section {
+				width: 100%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 50px;
+				align-items: center;
+				padding-left: 10%;
+				padding-right: 10%;
+				margin-bottom: 45px;
+				box-sizing: border-box;
+			}
+
+			.info-text {
+				text-align: center;
+				color: var(--col7);
+				line-height: 1.5;
+			}
+
+			.info-image img {
+				width: 100%;
+				max-height: 430px;
+				object-fit: cover;
+			}
+
+			.info-button {
+				display: block;
+				width: 60%;
+				max-width: 550px;
+				margin: 25px auto 0 auto;
+				padding: 18px 20px;
+				background-color: var(--col7);
+				color: var(--col8);
+				text-align: center;
+				text-decoration: none;
+				border: 3px solid var(--col1);
+				box-shadow: 0 4px 10px var(--col1);
+				transition: 0.3s;
+			}
+
+			.info-button:hover {
+				background-color: var(--col3);
+				color: var(--col1);
+				transform: translateY(-3px);
+				box-shadow: 0 8px 16px var(--col1);
 			}
 		</style>
 	</head>
@@ -48,60 +109,69 @@
 		</nav>
 
 		<div class="page-header">
-			<img src="photos/Recycle.png" alt="" height="100px" width="100px">
+			<img src="photos/Recycle.png" alt="Recycling Logo" height="100px" width="100px">
 			<div>
 				<h1>Sue Lemke</h1>
-				<p style="text-align: center;">Preventing waste, one scrap at a time</p>
+				<p class="page-intro">Preventing waste, one scrap at a time</p>
 			</div>
-			<img src="photos/Recycle.png" alt="" height="100px" width="100px">
+			<img src="photos/Recycle.png" alt="Recycling Logo" height="100px" width="100px">
 		</div>
 
 		<hr>
 
 		<h1>Specialized Recycling Information</h1>
 
-		<h3 style="text-align: center;">
-			Some electronics require extra attention because they contain different metals and parts.
+		<h3 class="page-intro">
+			Some electronics require extra attention because they contain different parts and materials.
 		</h3>
 
-		<div class="CF-txt">
-			<h3 style="text-align: center;">
-				Electronics are not just trash. Many items contain copper wire, aluminum, steel,
-				circuit boards, and other recyclable materials. Sue separates these parts so useful
-				materials can be recycled instead of being sent directly to the landfill.
-			</h3>
+		<h2 class="section-header">Inside a TV:</h2>
+
+		<div class="info-section">
+			<div class="info-text">
+				<h3>
+					Televisions can contain circuit boards, wires, metal plates, and other parts that can be separated for recycling.
+					The useful pieces are not always visible from the outside, so the item often needs to be opened carefully.
+				</h3>
+			</div>
+
+			<div class="info-image">
+				<img src="photos/specialized-info/inside-of-tv-2.jpeg" alt="Inside of a TV">
+			</div>
 		</div>
 
-		<div class="CF-img">
-			<img src="photos/inside-of-tv-1.jpeg" alt="Inside of a TV" width="100%">
+		<h2 class="section-header">Hard Drives:</h2>
+
+		<div class="info-section">
+			<div class="info-image">
+				<img src="photos/specialized-info/hard-drives-to-destroy.jpeg" alt="Hard drives to destroy">
+			</div>
+
+			<div class="info-text">
+				<h3>
+					Hard drives need special attention because they may contain personal data.
+					After they are removed from computers, they should be damaged so the data cannot be easily read before recycling.
+				</h3>
+			</div>
 		</div>
 
-		<div class="CF-txt">
-			<h3>
-				Items like TVs, computers, and printers often need to be taken apart carefully.
-				The valuable parts are not always visible from the outside. After opening the item,
-				Sue can identify wires, circuit boards, small pieces of copper, and larger metal pieces.
-			</h3>
-		</div>
+		<h2 class="section-header">Power Supply Parts:</h2>
 
-		<div class="CF-img">
-			<img src="photos/copper-in-tv.jpeg" alt="Copper inside a TV" width="100%">
-		</div>
+		<div class="info-section">
+			<div class="info-text">
+				<h3>
+					Power supplies can contain wires, circuit boards, screws, and metal pieces.
+					These parts can be separated and sorted, but they should be handled carefully because they may have sharp edges or small components.
+				</h3>
 
-		<div class="CF-txt">
-			<h3>
-				Some items should not be handled the same way as normal electronics. Tube TVs and
-				items containing Freon need special disposal methods. If an item has refrigerant,
-				it should be handled through the proper local disposal process.
-				<br><br>
-				<a href="https://www.epa.gov/recycle/electronics-donation-and-recycling" target="_blank">
+				<a class="info-button" href="https://www.epa.gov/recycle/electronics-donation-and-recycling" target="_blank">
 					Learn more about electronics donation and recycling
 				</a>
-			</h3>
-		</div>
+			</div>
 
-		<div class="CF-img">
-			<img src="photos/Recycle.png" alt="Recycling Logo" width="100%">
+			<div class="info-image">
+				<img src="photos/specialized-info/power-supply-insides.jpeg" alt="Power supply insides">
+			</div>
 		</div>
 	</body>
 </html>
