@@ -1,3 +1,38 @@
+<?php
+	$servername = "localhost";
+    $username = "root";
+    $password = "PneuMonoUltraMicroScopicSilicoVolcanoConIoSis!?";
+    $dbname = "time_table";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+	
+	if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+	
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $company_name = $_POST["company_name"];
+    $address = $_POST["address"];
+    $date = $_POST["Year"]."-".$_POST["Month"]."-".$_POST["Day"];
+    $time = $_POST["Hour"].":".$_POST["Minute"];
+
+    $stmt = $conn->prepare("INSERT INTO times (company_name, address, date, time) VALUES (?, ?, ?, ?)");
+    if(!$stmt){
+		die("Prepare failed: " . $conn->error);
+	}
+	$stmt->bind_param("ssss", $company_name, $address, $date, $time);
+
+    $stmt->execute();
+
+    echo "<script>console.log('Data inserted successfully')</script>";
+
+	$stmt->close();
+	}
+
+    $conn->close();
+?>
+
 <html>
     <head>
         <title>Schedule</title>
@@ -21,46 +56,171 @@
 			<img src="photos/Recycle.png" alt="" height="100px" width="100px">
 			<div>
 				<h1>Sue Lemke</h1>
-				<p style="text-align: center;">Preventing waste, one scrap at a time</p>
+				<p style="text-align: center; color: var(--col2)"><b>Preventing waste, one scrap at a time</b></p>
 			</div>
 			<img src="photos/Recycle.png" alt="" height="100px" width="100px">
 		</div>
 		<hr>
 
         <h1>Scheduling</h1>
-		<!-- echo "<script>console.log()</script>"; -->
-        <?php
-        
-        $servername = "localhost";
-        $username = "root";
-        $password = "PneuMonoUltraMicroScopicSilicoVolcanoConIoSis!?";
-        mysqli_report(MYSQLI_REPORT_OFF);
-        $conn = new mysqli($servername, $username, $password);
-        if ($conn->connect_error){
-            die("Connection failed: ".$conn->connect_error);
-        }
 
-        $sql = "CREATE DATABASE time_table";
+		<h3 style="text-align: center;">Here you can sign up for a time to meet with me, I'm retired so I have a lot of free time, if there are any conflicts I'll be sure to reach out to you</h3>
 
-		if($conn->query($sql) == TRUE){
-				echo "<script>console.log('Database created successfully')</script>";
-		}
-		else{
-				echo "<script>console.log('Error Creating Database:'.$conn->error)</script>";
-		}
+		<div id="Schedule-Content">
+			<form method="post" name="times" action="Schedule.php" onsubmit="return submit_times();">
+				<table>
+					<tr>
+						<th>Company Name</th>
+						<td><input type="text" name="company_name"></td>
+					</tr>
+					<tr>
+						<th>Address</th>
+						<td><input type="text" name="address"></td>
+					</tr>
+					<tr>
+						<th>Date & Time</th>
+						<td>
+							<select name="Month" id="">
+								<option value="" selected="selected">Month</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</ption>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+							<select name="Day" id="">
+								<option value="" selected="selected">Day</option>
+								<option value="1">01</option>
+								<option value="2">02</option>
+								<option value="3">03</option>
+								<option value="4">04</option>
+								<option value="5">05</option>
+								<option value="6">06</option>
+								<option value="7">07</option>
+								<option value="8">08</option>
+								<option value="9">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+							<select name="Year" id="">
+								<option value="" selected="selected">Year</option>
+								<option value="2026">2026</option>
+								<option value="2027">2027</option>
+							</select>
+							<select name="Hour" id="">
+								<option value="" selected="selected">Hour</option>
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+							</select>
+							<select name="Minute" id="">
+								<option value="" selected="selected">Minute</option>
+								<option value="00">00</option>
+								<option value="15">15</option>
+								<option value="30">30</option>
+								<option value="45">45</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="submit" value="Submit form">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
 
-		$sql = "USE time_table";
+		<script>
+			function submit_times(){
+				var company_name = "";
+				var address = "";
+				var date = "";
+				var time = "";
 
-		if($conn->query($sql) == TRUE){
-			echo "<script>console.log('Database changed successfully')</script>";
-		}
-		else{
-			echo "<script>console.log('Error changing database: ' .$conn->error)</script>";
-		}
+				for(let i = 0; i < 2; i++){
+					var text = document.forms["times"].elements[i];
 
-		$sql = "CREATE TABLE times (logID INT NOT NULL PRIMARY KEY AUTO_INCREMENT, company_name VARCHAR(50) NOT NULL, address VARCHAR(255) NOT NULL, time int";
+					if(!text.value){
+						alert("You haven't filled the box: " + text.name);
+						text.focus();
+						return false;
+					}
+					
+					if(i == 0)
+						company_name = text.value;
+					else
+						address = text.value;
+				}
 
-        $conn->close(); 
-        ?>
+				if (!document.times.Month.value || !document.times.Day.value || !document.times.Year.value || !document.times.Hour.value || !document.times.Minute.value){
+					alert("Please select a full date and time");
+					return false;
+				}
+
+				date = document.times.Year.options[document.times.Year.selectedIndex].text + "/";
+				date += document.times.Month.options[document.times.Month.selectedIndex].text + "/";
+				date += document.times.Day.options[document.times.Day.selectedIndex].text;
+				time = document.times.Hour.options[document.times.Hour.selectedIndex].text + ":";
+				time += document.times.Minute.options[document.times.Minute.selectedIndex].text;
+
+				console.log("company_name = " + company_name);
+				console.log("address = " + address);
+				console.log("date = " + date);
+				console.log("time = " + time);
+
+				return true;
+
+			}
+		</script>
     </body>
 </html>

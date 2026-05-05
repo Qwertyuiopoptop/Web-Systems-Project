@@ -112,10 +112,15 @@ h2{
   border-style: solid;
   text-align: center;
   box-shadow:0 4px 10px var(--col1);
+  transition: 0.3s;
 }
 
 .home-content-card:hover{
-  background-color: var(--col5);
+  background-color: var(--col3);
+  color: var(--col1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px var(--col1);
+  border-color: var(--col1);
 }
 
 #Mission-Left-1{ /*Text*/
@@ -202,10 +207,29 @@ h2{
   background-color: var(--col7);
   color: var(--col8);
   width: 50%;
-  height: 50px; 
+  height: 50px;
+  box-shadow: 0 4px 10px var(--col1);
+  transition: 0.3s;
 }
 
-.CF-txt{
+.left-txt>a>button:hover{
+  background-color: var(--col3);
+  color: var(--col1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px var(--col1);
+}
+
+.CF-section-header{
+  background-color: var(--col5);
+  float: left;
+  width: 100%;
+  color: var(--col1);
+  height: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.CF-txt-left{
   height: 40%;
   width: 49%;
   float: left;
@@ -213,14 +237,37 @@ h2{
   padding-left: 10%;
   padding-right: 1%;
   align-items: center;
+  justify-content: center;
 }
 
-.CF-img{
+.CF-img-right{
   padding-right: 10%;
   width: 30%;
   float: left;
 }
 
-@media screen {
-  
+.CF-txt-right{
+  height: 40%;
+  width: 49%;
+  float: left;
+  display: flex;
+  padding-right: 10%;
+  padding-left: 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+.CF-img-left{
+  padding-left: 10%;
+  width: 30%;
+  float: left;
+}
+
+
+#Schedule-Content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
