@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "root";
-    $password = "PneuMonoUltraMicroScopicSilicoVolcanoConIoSis!?";
+    $password = "";
     mysqli_report(MYSQLI_REPORT_OFF);
     $conn = new mysqli($servername, $username, $password);
     if ($conn->connect_error){

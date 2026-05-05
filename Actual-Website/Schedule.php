@@ -1,7 +1,7 @@
 <?php
 	$servername = "localhost";
     $username = "root";
-    $password = "PneuMonoUltraMicroScopicSilicoVolcanoConIoSis!?";
+    $password = "";
     $dbname = "time_table";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
